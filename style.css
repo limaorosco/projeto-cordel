@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* Fonte: Passion One (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/* Font: Sriracha (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --cor1: black;
+  --cor2: white;
+  --cor3: rgba(0, 0, 0, 0.5);
+
+  --fontetitulo: 'Passion One', 'cursive';
+  --fonteparagrafos: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  --fontecordel: 'Sriracha', 'cursive';
+}
+
+header {
+  background-color: var(--cor1);
+}
+
+header > p {
+  font-family: var(--fonteparagrafos);
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+main p {
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 15px;
+}
+
+h1 {
+  font-family: var(--fontetitulo);
+  font-size: 5em;
+  color: var(--cor2);
+  text-align: center;
+  padding-top: 50px;
+}
+
+a {
+  color: var(--cor2);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  white-space: pre-line;
+}
+
+div > p {
+  font-family: var(--fontecordel);
+  font-weight: normal;
+  font-size: 2em;
+  text-align: left;
+}
+
+.foto {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.foto > p {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Efeito paralaxe em uma imagem de fundo */
+#verso2 {
+  background-color: darkgreen;
+  background-image: url(imagens/background001.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Efeito paralaxe em uma imagem de fundo */
+#verso4 {
+  background-image: url(imagens/background002.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: var(--fonteparagrafos);
+  text-align: center;
+  padding: 10px;
+}
